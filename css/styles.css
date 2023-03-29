@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1,
+data {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1.1rem;
+}
+
+/* Travail sur le background svg */
+aside {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-top {
+  width: 90%;
+  height: 100vh;
+  object-fit: contain;
+  position: fixed;
+  left: -30%;
+  top: -42%;
+  z-index: 0;
+}
+.bg-bottom {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  position: fixed;
+  right: -36%;
+  bottom: -56%;
+  z-index: 0;
+}
+main {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.container {
+  width: 35%;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* Travail sur le background svg motif bulles */
+.background {
+  overflow: hidden;
+}
+.bg-bulles {
+  object-fit: cover;
+}
+.background,
+.bg-bulles {
+  width: 100%;
+  height: 22vh;
+}
+
+/* Travail sur la section profil, nom age et ville */
+.photo-profil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 13vh;
+  margin-bottom: 2%;
+}
+.background-blanc {
+  background-color: rgb(255, 255, 255);
+  height: 26vh;
+  z-index: 1;
+}
+.img-victor {
+  width: 30%;
+  border-radius: 150px;
+  display: flex;
+  border: 5px solid white;
+  z-index: 2;
+}
+.nom-age {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 4rem;
+}
+.ville {
+  line-height: 2rem;
+}
+.age {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.text-claire {
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+/* Travail sur les données chiffrés */
+.data-profil {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
+  border-top: 2px solid rgb(146, 144, 144, 0.5);
+}
+
+.data-profil div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Travail sur le footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

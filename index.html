@@ -11,54 +11,69 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Frontend Mentor | Profile card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <main class="container">
-      <div class="background">
-        <img src="images/bg-pattern-card.svg" alt="Motif bulles bleu vert" />
-      </div>
-      <div class="background-color"></div>
-      <section class="photo-profil">
-        <img src="images/image-victor.jpg" alt="Profil de Vicotor Crest" />
-        <p>Victor Crest <span class="text-claire">26</span></p>
-        <p class="text-claire ville">London</p>
-      </section>
-      <div class="background-color">
+    <aside class="bg-svg">
+      <img
+        src="images/bg-pattern-top.svg"
+        alt="Sphère haut en bleu-vert"
+        class="bg-top"
+      />
+      <img
+        src="images/bg-pattern-bottom.svg"
+        alt="Sphère bas en bleu-vert"
+        class="bg-bottom"
+      />
+    </aside>
+    <main>
+      <div class="container">
+        <div class="background">
+          <img
+            src="images/bg-pattern-card.svg"
+            alt="Motif bulles bleu vert"
+            class="bg-bulles"
+          />
+        </div>
+        <div class="background-blanc"></div>
+        <section class="photo-profil">
+          <img
+            src="images/image-victor.jpg"
+            alt="Profil de Vicotor Crest"
+            class="img-victor"
+          />
+          <div class="nom-age">
+            <h1>Victor Crest<span class="age text-claire">26</span></h1>
+          </div>
+          <p class="text-claire ville">London</p>
+        </section>
+
         <section class="data-profil">
           <div class="followers">
             <data value="80">80k</data>
-            <p>Followers</p>
+            <p class="text-claire">Followers</p>
           </div>
           <div class="likes">
             <data value="803">803k</data>
-            <p>Likes</p>
+            <p class="text-claire">Likes</p>
           </div>
           <div class="photos">
             <data value="1004">1.4k</data>
-            <p>Photos</p>
+            <p class="text-claire">Photos</p>
           </div>
         </section>
       </div>
     </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/klodita">KloditaWEB</a>.
+      </div>
+    </footer>
   </body>
 </html>
