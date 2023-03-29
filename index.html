@@ -9,9 +9,19 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width:768px) and (max-width:991px)"
+      href="css/tablette.css"
+    />
+    <link
+      rel="stylesheet"
+      media="only screen and (max-width:499px)"
+      href="css/mobile.css"
+    />
 
     <title>Frontend Mentor | Profile card component</title>
   </head>
@@ -37,13 +47,14 @@
             class="bg-bulles"
           />
         </div>
-        <div class="background-blanc"></div>
-        <section class="photo-profil">
-          <img
-            src="images/image-victor.jpg"
-            alt="Profil de Vicotor Crest"
-            class="img-victor"
-          />
+        <section class="photo-profil background-blanc">
+          <div class="photo">
+            <img
+              src="images/image-victor.jpg"
+              alt="Profil de Victor Crest"
+              class="img-victor"
+            />
+          </div>
           <div class="nom-age">
             <h1>Victor Crest<span class="age text-claire">26</span></h1>
           </div>

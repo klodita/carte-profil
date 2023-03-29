@@ -1,0 +1,47 @@
+@media screen and (min-width: 212px) and (max-width: 499px) {
+  h1,
+  data {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .bg-top {
+    left: -43%;
+    top: -45%;
+  }
+  .bg-bottom {
+    right: -60%;
+    bottom: -38%;
+  }
+  .container {
+    width: 85%;
+  }
+
+  .img-victor {
+    width: 33%;
+    top: -55px;
+  }
+  .nom-age {
+    line-height: 3.8rem;
+  }
+  .ville {
+    line-height: 1rem;
+    margin-bottom: 10%;
+  }
+  .age {
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+  /* Media querie supplémentaire pour rectifier la position de la photo de profil etc car cela varie... */
+  @media screen and (min-width: 425px) and (max-width: 499px) {
+    .img-victor {
+      width: 33%;
+      top: -60px;
+    }
+    .nom-age {
+      line-height: 5rem;
+    }
+  }
+}

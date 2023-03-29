@@ -43,21 +43,22 @@ aside {
   object-fit: contain;
   position: fixed;
   right: -36%;
-  bottom: -56%;
+  bottom: -53%;
   z-index: 0;
 }
 main {
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: -150px;
   z-index: 2;
 }
 
 .container {
-  width: 35%;
+  /* width: 35%; */
   overflow: hidden;
   border-radius: 15px;
   position: relative;
@@ -80,22 +81,29 @@ main {
 .photo-profil {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
-  position: absolute;
-  top: 13vh;
-  margin-bottom: 2%;
+  position: relative;
+  box-sizing: content-box;
 }
 .background-blanc {
   background-color: rgb(255, 255, 255);
-  height: 26vh;
   z-index: 1;
+}
+.photo {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
 }
 .img-victor {
   width: 30%;
+  object-fit: cover;
   border-radius: 150px;
   display: flex;
   border: 5px solid white;
+  position: absolute;
+  top: -80px;
   z-index: 2;
 }
 .nom-age {
@@ -104,9 +112,11 @@ main {
   flex-direction: row;
   justify-content: center;
   line-height: 4rem;
+  margin-top: 15%;
 }
 .ville {
-  line-height: 2rem;
+  line-height: 1rem;
+  margin-bottom: 8%;
 }
 .age {
   font-size: 1.5rem;
@@ -137,6 +147,9 @@ main {
 }
 
 /* Travail sur le footer */
+footer {
+  margin: 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
